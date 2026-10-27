@@ -108,6 +108,11 @@
     $("nm").textContent = e.target.value.trim() || "Kamu";
   });
 
+  /* umur */
+  $("umur").addEventListener("input", function (e) {
+    $("age").textContent = e.target.value || "0";
+  });
+
   /* candles */
   var cg = $("candles"),
     NS = "http://www.w3.org/2000/svg",
