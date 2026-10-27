@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#1f2a44" />
+    <title>Selamat Ulang Tahun!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="deco" style="top: 8%; left: 6%">🎈</div>
+    <div class="deco" style="top: 14%; right: 8%; animation-delay: 0.5s">
+      ⭐
+    </div>
+    <div class="deco" style="bottom: 12%; left: 10%; animation-delay: 1s">
+      🍔
+    </div>
+    <div class="deco" style="bottom: 20%; right: 6%; animation-delay: 1.5s">
+      🏆
+    </div>
+    <main>
+      <h1>
+        🎉 Selamat Ulang Tahun, <span id="nm">Kamu</span>, Yang ke-<span
+          id="age"
+          >0</span
+        >! 🎂
+      </h1>
+      <div class="card">
+        <input
+          id="name"
+          placeholder="Ketik nama di sini…"
+          maxlength="20"
+          aria-label="Nama"
+        />
+        <input
+          id="umur"
+          type="number"
+          placeholder="Ketik umur di sini…"
+          min="0"
+          max="150"
+          aria-label="Umur"
+        />
+      </div>
+
+      <div class="card">
+        <svg id="cake" viewBox="0 0 240 200" aria-label="Kue ulang tahun">
+          <ellipse cx="120" cy="188" rx="110" ry="9" fill="var(--c4)" />
+          <rect
+            x="25"
+            y="128"
+            width="190"
+            height="58"
+            rx="14"
+            fill="var(--c2)"
+          />
+          <rect
+            x="55"
+            y="82"
+            width="130"
+            height="50"
+            rx="12"
+            fill="var(--c3)"
+          />
+          <path
+            d="M55 92q12 14 24 0t24 0 24 0 24 0 24 0 5 0v-6a12 12 0 0 0-12-12H67a12 12 0 0 0-12 12z"
+            fill="var(--c1)"
+          />
+          <path
+            d="M25 138q12 14 24 0t24 0 24 0 24 0 24 0 24 0 24 0 0 0v-4a12 12 0 0 0-12-12H37a12 12 0 0 0-12 12z"
+            fill="var(--c1)"
+          />
+          <circle cx="70" cy="160" r="5" fill="var(--c3)" />
+          <circle cx="120" cy="165" r="5" fill="var(--c3)" />
+          <circle cx="170" cy="160" r="5" fill="var(--c3)" />
+          <g id="candles"></g>
+        </svg>
+        <div id="msg">Klik lilinnya buat ditiup! 💨</div>
+        <button id="blow">Tiup semua 💨</button>
+        <button id="relight">Nyalakan lagi 🔥</button>
+      </div>
+
+      <div class="card">
+        <button id="gift" aria-label="Buka kado">🎁</button>
+        <div id="wish">Ketuk kado untuk dapat ucapan!</div>
+      </div>
+      <small
+        >🎈 Balon pecah: <b id="cnt">0</b> · pecahkan balon yang terbang untuk
+        kejutan!</small
+      >
+    </main>
+    <canvas id="cv"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
